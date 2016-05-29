@@ -1,0 +1,28 @@
+<%= form_for @user do |f| %>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true%>
+</p>
+<p>
+  <%= f.label :gender %><br />
+  <%= f.label :gender, "Male"%>
+  <%= f.radio_button :gender, true %>
+  <%= f.label :gender, "Female", :value => "Female" %>
+  <%= f.radio_button :gender, false, :checked => true %>
+
+</p>
+<p>
+  <%= f.label :email %>
+  <%= f.email_field :email,:required => true %>
+</p>
+<p>
+  <%= f.label :password %>
+  <%= f.password_field :password,:required => true %>
+</p>
+<p>
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation,:required => true %>
+</p>
+
+<%= f.submit "Create Account"%>
+<% end  %>
