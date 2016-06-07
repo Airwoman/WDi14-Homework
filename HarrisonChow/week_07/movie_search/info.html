@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie search</title>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript">
+    var url = window.location.href;
+    var theleft = url.indexOf("=") + 1;
+    var id = url.substring(theleft, url.length);
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (request.readyState !==4) {
+        return;
+      }
+      var dataAsString = request.responseText;
+      var dataAsObject = JSON.parse( dataAsString );
+      var $title = $("<div class='row'><img src='" + dataAsObject.Poster + "'/> </div>");
+      var $content = $("<div>Title: " + dataAsObject.Title + "</div> <div> Year: "+ dataAsObject.Year +  "</div> <div>Rated: "
+        + dataAsObject.Rated + "</div> <div>Released: "+ dataAsObject.Released +  "</div> <div> Runtime: "
+        + dataAsObject.Runtime + "</div> <div> Genre: "+ dataAsObject.Genre +  "</div> <div> Director: "
+        + dataAsObject.Director + "</div> <div>Writer: "+ dataAsObject.Writer + "</div> <div>Actors: "
+        + dataAsObject.Actors + "</div> <div>Plot: "+ dataAsObject.Plot +  "</div> <div>Language: "
+        + dataAsObject.Language +"</div> <div>Country: "+ dataAsObject.Country + "</div> <div>Awards: "
+        + dataAsObject.Awards + "</div> <div>Metascore: "+ dataAsObject.Metascore + "</div> <div>imdbRating: "
+        + dataAsObject.imdbRating + "</div> <div>imdbVotes: "+ dataAsObject.imdbVotes + "</div> <div>imdbID: "
+        + dataAsObject.imdbID + "</div> <div>Type: "+ dataAsObject.Type +  "</div>");
+
+      $title.appendTo(document.body);
+      $content.appendTo($title);
+  };
+  request.open("GET", "http://omdbapi.com?i="+id);
+  request.send();
+
+
+  </script>
+
+</head>
+
+<body>
+
+<script src="js/jquery-1.12.3.js"></script>
+</body>
+</html>

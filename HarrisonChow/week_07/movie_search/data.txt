@@ -1,0 +1,73 @@
+<div class ="row">
+  <div class ="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8"><img src="dataAsObject.Poster" /></div>
+  <div class="col-md-2"></div>
+  </div>
+  <div class ="row">
+    <div class="col-md-3">Title : dataAsObject.Title</div>
+    <div class="col-md-3">Year : dataAsObject.Year</div>
+    <div class="col-md-3">Rated : dataAsObject.Rated</div>
+    <div class="col-md-3">Released: dataAsObject.Released</div>
+  </div>
+  <div class ="row">
+    <div class="col-md-3">Runtime : dataAsObject.Runtime</div>
+    <div class="col-md-3">Genre : dataAsObject.Genre</div>
+    <div class="col-md-3">Director : dataAsObject.Director</div>
+    <div class="col-md-3">Writer : dataAsObject.Writer</div>
+  </div>
+  <div class ="row">
+    <div class="col-md-3">Actors : dataAsObject.Actors</div>
+    <div class="col-md-3">Plot : dataAsObject.Plot</div>
+    <div class="col-md-3">Language : dataAsObject.Language</div>
+    <div class="col-md-3">Country : dataAsObject.Country</div>
+  </div>
+  <div class ="row">
+    <div class="col-md-3">Awards : dataAsObject.Awards</div>
+    <div class="col-md-3">Metascore : dataAsObject.Metascore</div>
+    <div class="col-md-3">imdbRating : dataAsObject.imdbRating</div>
+    <div class="col-md-3">imdbVotes : dataAsObject.imdbVotes</div>
+  </div>
+  <div class ="row">
+    <div class="col-md-3">imdbID: dataAsObject.imdbID</div>
+    <div class="col-md-3">Type : dataAsObject.Type</div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+
+
+
+
+"<div>" + dataAsObject.Title + "</div> <div>"+ dataAsObject.Year +  "</div> <div>"
+  + dataAsObject.Rated + "</div> <div>"+ dataAsObject.Released +  "</div> <div>"
+  + dataAsObject.Runtime + "</div> <div>"+ dataAsObject.Genre +  "</div> <div>"
+  + dataAsObject.Director + "</div> <div>"+ dataAsObject.Writer + "</div> <div>"
+  + dataAsObject.Actors + "</div> <div>"+ dataAsObject.Plot +  "</div> <div>"
+  + dataAsObject.Language +"</div> <div>"+ ataAsObject.Country + "</div> <div>"
+  + dataAsObject.Awards + "</div> <div>"+ dataAsObject.Metascore + "</div> <div>"
+  + dataAsObject.imdbRating + "</div> <div>"+ dataAsObject.imdbVotes + "</div> <div>"
+  + dataAsObject.imdbID + "</div> <div>"+ dataAsObject.Type +  "</div> <div>"+
+
+
+
+
+"Title : "+ dataAsObject.Title +"
+Year : "+dataAsObject.Year +"
+Rated : "+dataAsObject.Rated +"
+Released: "+dataAsObject.Released +"
+Runtime : "+dataAsObject.Runtime +"
+Genre : "+dataAsObject.Genre +"
+Director : "+dataAsObject.Director +"
+Writer : "+dataAsObject.Writer +"
+Actors : "+dataAsObject.Actors +"
+Plot : "+dataAsObject.Plot +"
+Language : "+dataAsObject.Language +"
+Country : "+dataAsObject.Country +"
+Awards : "+dataAsObject.Awards +"
+Metascore : "+dataAsObject.Metascore +"
+imdbRating : "+dataAsObject.imdbRating +"
+imdbVotes : "+dataAsObject.imdbVotes +"
+imdbID: "+dataAsObject.imdbID +"
+Type : "+dataAsObject.Type
